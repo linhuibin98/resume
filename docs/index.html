@@ -7,7 +7,7 @@
   <!--<!
   [endif]--><head>
     <meta charset="utf-8" />
-    <title>林慧斌 - 个人简历</title>
+    <title>个人简历</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <script>
@@ -62,15 +62,15 @@
             />
           </figure>
           <section class="title">
-            <h1>林慧斌</h1>
-            <h2>男 / 2020毕业 / 本科</h2>
+            <h1>林xx</h1>
+            <h2>男 / 2020届 / 计算机科学与技术(本科)</h2>
           </section>
           <address>
             <ul class="contact">
               <li class="contact-email">
                 <a href="mailto://1032352370@qq.com">1032352370@qq.com</a>
               </li>
-              <li class="contact-wechat"> 15170729232</li>
+              <li class="contact-wechat"> 151xxxxxxxx</li>
               <li class="contact-github">
                 <a href="https://github.com/linhuibin98"
                   >  https://github.com/linhuibin98</a
@@ -79,7 +79,7 @@
               <li class="contact-blog">
                 <a href="http://linhuibin.com">  http://linhuibin.com</a>
               </li>
-              <li class="contact-wechat visible-lt-sm invisible-print"> 15170729232</li>
+              <li class="contact-wechat visible-lt-sm invisible-print"> 151xxxxxxxx</li>
             </ul>
           </address>
         </header>
@@ -111,15 +111,18 @@
                     </h3>
                     <dl class="experience-description timeline-content">
                       <dt class="experience-project-name">懒人外卖（webApp）</dt>
-                      <dd class="experience-task">技术栈: react、react-router、redux、koa2</dd>
-                      <dd class="experience-task">react脚手架<strong>create-react-app</strong>创建项目</dd>
-                      <dd class="experience-task">采用<strong>vw</strong>移动端页面适配</dd>
-                      <dd class="experience-task">通过 <strong>PostCSS</strong>将依照实验性CSS标准编写的代码转译使用</dd>
-                      <dd class="experience-task">项目中采用<strong>localStorage</strong>本地数据存储</dd>
-                      <dd class="experience-task">项目中使用<strong>ajax</strong>的HTTP库<strong>axios</strong>调用接口发送请求，获取数据，完成前端页面的数据渲染</dd>
-                      <dd class="experience-task">服务端使用node.js的web框架<strong>koa2</strong>搭建RESTful API服务器 </dd>
-                      <dd class="experience-task">服务端<strong>mongoDB</strong>数据存储，<strong>Mongoose</strong>操作数据库</dd>
-                      <dd class="experience-task">利用github的<strong>Webhooks</strong>完成项目的自动部署</dd>
+                      <dd class="experience-task">项目描述: 该项目是在线订餐系统，用户注册后可以选择商品,加入购物车,并支付下单,以及收货地址的增删改, 交易评价。</dd>
+                      <dd class="experience-task">技术栈: react,react-router,redux,axios,koa2</dd>
+                      <dd class="experience-task">开发时自己封装过 Dialog对话框、Popover弹出框、Tooltip文字提示、Star、StarRating评分...等公用功能组件，以及封装过CheckLogin登录状态校验 高阶组件,用来控制需要登录才能访问的页面，进行路由的转发。</dd>
+                      <dd class="experience-task">项目使用脚手架<strong>create-react-app</strong>初始化项目。</dd>
+                      <dd class="experience-task">有使用webpack配置PostCSS将依照实验性CSS标准编写的代码转译使用，并配置其插件将px单位根据设计图尺寸，自动化转换vw, 进行移动端页面适配。</dd>
+                      <dd class="experience-task">在项目中购物车功能、订单结算页,收货地址, 用户标识token...等多个页面、功能中使用<strong>localStorage</strong>数据持久化存储的方案, 解决页面刷新后数据丢失问题。</dd>
+                      <dd class="experience-task">项目中使用<strong>ajax</strong>的HTTP库<strong>axios</strong>调用接口发送请求，获取数据，完成前端页面的数据渲染。为避免请求接口重复代码，以及处理各种网络情况造成的异常情况的判断，对axios进行网络请求封装和异常拦截操作及异常统一处理。</dd>
+                      <dd class="experience-task">服务端使用node.js的web框架<strong>koa2</strong>搭建RESTful API服务器，提供数据请求接口。</dd>
+                      <dd class="experience-task">服务端有使用自己编写koa的中间件：异常捕获catchError, 权限校验verifyAuth, 文件上传multer...等。</dd>
+                      <dd class="experience-task">服务端使用<strong>mongoDB</strong>数据存储，<strong>Mongoose</strong>连接，及对数据库的增删改查操作数。</dd>
+                      <dd class="experience-task">支付功能是调用的支付宝H5测试接口,前端发送购物车商品数据,后端生成订单,判断是否支付成功,根据支付结果,进行页面的定向跳转。</dd>
+                      <dd class="experience-task">最后利用github的<strong>Webhooks</strong>调用服务器对应项目的脚本,完成在服务器的docker自动化部署。</dd>
                     </dl>
                   </li>
                   <li class="timeline-item experience-project">
@@ -139,12 +142,10 @@
                     </h3>
                     <dl class="experience-description timeline-content">
                       <dt class="experience-project-name">外卖商家后台管理系统（pc）</dt>
-                      <dd class="experience-task">懒人外卖配套的商家后台管理系统,主要功能有店铺信息管理、订单统计、商品的增删改、员工管理、库存管理...等来管理</dd>
-                      <dd class="experience-task">该项目基于<strong>vue-element-admin</strong>进行二次开发</dd>
-                      <dd class="experience-task">前端 JavaScript 代码以<strong>ES6 Module</strong>形式组织，使用<strong>WebPack</strong>进行打包处理</dd>
-                      <dd class="experience-task">服务端使用node.js的web框架<strong>koa2</strong>搭建RESTful API服务器 </dd>
-                      <dd class="experience-task">服务端<strong>mongoDB</strong>数据存储，<strong>Mongoose</strong>操作数据库</dd>
-                      <dd class="experience-task">利用github的<strong>Webhooks</strong>完成项目的自动部署</dd>
+                      <dd class="experience-task">该项目为懒人外卖项目的配套的商家后台管理系统, 主要有店铺基本信息管理，商品的添加上架、修改、删除，人事管理，订单管理，库存管理，店铺收支管理以及店铺数据以图表可视化的形式展示...等功能，使商家可以快速的对店铺各类数据了解，商品的管理。</dd>
+                      <dd class="experience-task">技术栈：<strong>vue</strong>、<strong>vue-router</strong>、<strong>vuex</strong>、<strong>Element UI</strong>、<strong>echarts</strong>、<strong>axios</strong></dd>
+                      <dd class="experience-task">有对Echarts进行二次封装为适用于本项目的组件, 减少重复代码, 组件复用。</dd>
+                      <dd class="experience-task">项目中使用<strong>ajax</strong>的HTTP库<strong>axios</strong>调用接口发送请求，获取数据，完成前端页面的数据渲染。为避免请求接口重复代码，以及处理各种网络情况造成的异常情况的判断，对axios进行网络请求封装和异常拦截操作及异常统一处理。</dd>
                     </dl>
                   </li>
                   <li class="timeline-item experience-project">
@@ -164,31 +165,11 @@
                     </h3>
                     <dl class="experience-description timeline-content">
                       <dt class="experience-project-name">微信小程序-欢乐购商城</dt>
-                      <dd class="experience-task">项目采用原生小程序开发</dd>
-                      <dd class="experience-task">在只有一个人开发的情况下，将 UI 图转换成小程序页面</dd>
-                      <dd class="experience-task">问题：微信小程序原生API大部分不支持promise, 开发时会遇到回调嵌套问题。实现简单的promisify将原生APIpromise化，和封装工具函数，提高编程效率</dd>
-                    </dl>
-                  </li>
-                </ul>
-              </div>
-            </section>
-            <section class="education">
-              <div class="sec-title-wrapper">
-                <h3 class="sec-title">
-                  <span class="sec-title-ch">教育经历</span
-                  ><span class="sec-title-en">Education</span>
-                </h3>
-              </div>
-              <div class="timeline-wrapper">
-                <ul class="sec-content timeline">
-                  <li class="timeline-item education-undergraduate">
-                    <h3 class="timeline-title">
-                      <time class="education-time">2016 ~ 2020</time>
-                    </h3>
-                    <dl class="education-description timeline-content">
-                      <dt class="education-name">南昌大学共青学院</dt>
-                      <dd class="education-major">计算机科学与技术（本科）</dd>
-                      <dd class="education-honor">江西省大学生软件服务外包创新创业大赛二等奖</dd>
+                      <dd class="experience-task">项目描述：该项目为在线购物产品，用户微信授权登录后，可以浏览、搜索商品，加入购物车，以及添加收藏，支付下单。</dd>
+                      <dd class="experience-task">项目使用原生小程序开发</dd>
+                      <dd class="experience-task">引入`regeneratorRuntime`, 使小程序支持 `async await` 语法，加快开发效率。</dd>
+                      <dd class="experience-task">开发时有对原生`wx.request`请求方法进行二次封装,处理请求错误, 以及请求时Loding的展示和隐藏。</dd>
+                      <dd class="experience-task">页面布局为仿写的某商城UI, 使用Charles工具抓取的API接口，用于学习使用。</dd>
                     </dl>
                   </li>
                 </ul>
@@ -217,7 +198,7 @@
                       </dd>
                       <dd class="skills-item-description">
                         <span>
-                          熟悉 <strong>JavaScript</strong> 核心基础；掌握 <strong>ES6</strong> 常用语法
+                          熟练掌握 <strong>JavaScript</strong> 核心基础，以及掌握 <strong>ES6</strong> 常用语法
                         </span>
                       </dd>
                       <dd class="skills-item-description">
@@ -227,21 +208,25 @@
                       </dd>
                       <dd class="skills-item-description">
                         <span
-                          >熟练运⽤响应式布局和弹性盒布局，利⽤ <strong>rem</strong>、<strong>px</strong> 和百分比进行移动端的布局</span
+                          >熟练运⽤响应式布局和弹性盒布局，利⽤ <strong>rem</strong>、px 和 百分比 进行移动端的布局</span
                         >
                       </dd>
                       <dd class="skills-item-description">
                         <span
-                          >熟练运⽤ <strong>Vue</strong>、<strong>React</strong> 框架，及其全家桶, 进⾏项⽬的开发,并都开发过小项目</span
+                          >熟练运⽤ <strong>Vue</strong> 框架，擅⻓ <strong>Vue 全家桶</strong> + <strong>ElementUI</strong> 进⾏项⽬的开发, 并有自己封装过一些常用组件。</span
                         >
                       </dd>
                       <dd class="skills-item-description">
                         <span
-                          >熟练运⽤ <strong>bootstrap</strong>等前端框架的应用，能够快速实现⻚面的开发</span
-                        >
+                          >熟悉 <strong>React</strong> 框架，使用过<strong>React全家桶</strong>开发过小型项目
+                        </span>
+                      </dd>
+                      <dd class="skills-item-description">
+                        <span
+                          >熟悉 <strong>微信小程序开发</strong>，使用原生小程序开发过小型项目
+                        </span>
                       </dd>
                       <dd class="skills-item-description"><span>了解<strong>微信公众号</strong>开发</span></dd>
-                      <dd class="skills-item-description">了解 <strong>uni-app</strong> 多端开发；</dd>
                       <dt class="skills-item-summary">前端工程实践</dt>
                       <dd class="skills-item-description">
                         <span
@@ -288,10 +273,9 @@
                       </dd>
                       <dd class="skills-item-description">
                         <span
-                          >能编写简单的 <strong>Express</strong> /
+                          >能够编写简单的 <strong>Express</strong> /
                           <strong>Koa</strong> 中间件，使用
-                          <strong>Mocha</strong> 与
-                          <strong>Chai</strong> 编写单元测试</span
+                          <strong>Jest</strong> 编写单元测试</span
                         >
                       </dd>
                       <dd class="skills-item-description">
@@ -320,10 +304,49 @@
                       </dd>
                       <dd class="skills-item-description">
                         <span
+                          >有使用过 <strong>Charles</strong>...等网络抓包工具,抓取页面API接口</span
+                        >
+                      </dd>
+                      <dd class="skills-item-description">
+                        <span
                           >日常使用
                           <strong>VS code</strong> / <strong>Sublime Text</strong> /
                           <strong>webstorm</strong> 进行开发，也乐于尝试新工具</span
                         >
+                      </dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section class="education">
+              <div class="sec-title-wrapper">
+                <h3 class="sec-title">
+                  <span class="sec-title-ch">教育经历</span
+                  ><span class="sec-title-en">Education</span>
+                </h3>
+              </div>
+              <div class="timeline-wrapper">
+                <ul class="sec-content timeline">
+                  <li class="timeline-item education-undergraduate">
+                    <h3 class="timeline-title">
+                      <time class="education-time">2016 ~ 至今</time>
+                    </h3>
+                    <dl class="education-description timeline-content">
+                      <dt class="education-name">xxxxxxxxx</dt>
+                      <dd class="education-major">计算机科学与技术（本科）</dd>
+                      <dd class="education-honor">xxxxxxxxxxxxxxxxxx</dd>
+                    </dl>
+                  </li>
+                  <li class="timeline-item skills-frontend">
+                    <h3 class="timeline-title">
+                      <span class="skills-type">自我评价</span>
+                    </h3>
+                    <dl class="skills-description timeline-content">
+                      <dd class="skills-item-description">
+                        <span>
+                          
+                        </span>
                       </dd>
                     </dl>
                   </li>
